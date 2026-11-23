@@ -2,7 +2,7 @@
 
 Base de datos **FarmaciaBI** (SQL Server) · Equipo 3 · Integración de Datos, Otoño 2026 · Universidad Iberoamericana León.
 
-Resumen: **7 tablas y 41 columnas**, todas con descripción de negocio registrada con `sys.sp_addextendedproperty` (`MS_Description`). Las descripciones de este archivo se tomaron del propio script `sql/Equipo03_Entrega2.sql`; el mismo contenido se obtiene en SQL Server con `exec sp_ObtenerDiccionarioDatos @NombreTabla = '<tabla>'`.
+Resumen: **7 tablas y 41 columnas**, todas con descripción de negocio registrada con `sys.sp_addextendedproperty` (`MS_Description`). Las descripciones de este archivo se tomaron del propio script `docs/entrega2/Equipo03_Entrega2.sql`; el mismo contenido se obtiene en SQL Server con `exec sp_ObtenerDiccionarioDatos @NombreTabla = '<tabla>'`.
 
 ## Estándar de nomenclatura (Clase 17)
 
@@ -18,7 +18,7 @@ Resumen: **7 tablas y 41 columnas**, todas con descripción de negocio registrad
 | fact_ventas_farmacia | ean_medicamento | dim_medicamentos | N:1 |
 | fact_tickets_atencion | id_venta | fact_ventas_farmacia | N:1 |
 
-Las tablas `stg_` y `aud_linaje_carga` no tienen llaves foráneas por diseño. DER: [`modelo/FarmaciaBI_DER_Entrega2.png`](modelo/FarmaciaBI_DER_Entrega2.png).
+Las tablas `stg_` y `aud_linaje_carga` no tienen llaves foráneas por diseño. DER: [`assets/diagrama_der_sqlserver.png`](assets/diagrama_der_sqlserver.png).
 
 ## dim_pacientes
 **Dimensión maestra** · Responsable: Vale
